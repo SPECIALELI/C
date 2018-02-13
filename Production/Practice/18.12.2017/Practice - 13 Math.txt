@@ -1,0 +1,17 @@
+/*Программа вычисляет плотность 
+тела по его массе и объему.*/
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+void main()
+{
+	float m, V, p;
+	cout << "Mass is -> ";
+	cin >> m;
+	cout << "Amount is -> ";
+	cin >> V;
+	p = m / V;
+	cout << "Density = " << p << endl;
+}

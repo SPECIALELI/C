@@ -1,0 +1,15 @@
+/*Программа, которая запрашивает у пользователя температуру
+в градусах по  Фаренгейту и переводит ее в градусы по Цельсию, 
+после чего отображает температуру в градусах по Цельсию на экране.*/
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main(void)
+{
+	int f;
+	cout << "Enter the temperature in Farhenheit  ->";
+	cin >> f;
+	cout << "The temperature in Celsius = " << 5 * f / 9 - 17.8 << endl;
+}

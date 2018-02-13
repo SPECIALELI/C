@@ -1,0 +1,21 @@
+/*Пользователь вводит три числа. Программа находит среднее
+арифметическое этих чисел, а также разность удвоенной
+суммы первого и третьего чисел и утроенного второго числа. */
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main(void)
+{
+	int a, b, c;
+	cout << "Enter the number 1 ->";
+	cin >> a;
+	cout << "Enter the number 2 ->";
+	cin >> b;
+	cout << "Enter the number 3 ->";
+	cin >> c;
+	cout << "Average=" << (a + b + c) / 3 << endl;
+	cout << "The difference of the doubled sum of the first\n\
+and third numbers and the tripled second number = " << ((a + c) * 2) - (b * 3) << endl;
+}

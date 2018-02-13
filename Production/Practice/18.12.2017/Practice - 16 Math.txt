@@ -1,0 +1,17 @@
+/*Программа, запрашивает вещественное число a и,
+пользуясь только опeрацией умножения, 
+вычисляет a^4 за две операции.*/
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main(void)
+{
+	int a;
+	cout << "Enter A -> ";
+	cin >> a;
+	a *= a;
+	a *= a;
+	cout << "New A = " << a << endl;
+}

@@ -1,0 +1,24 @@
+/*Программа, которая выводит на экран:
+Диапазоны минимальных и максимальных для 
+разных типов данных используя константы 
+библиотеки  <climits>*/
+
+#include "stdafx.h"
+#include <iostream>
+#include <climits> 
+using namespace std;
+
+void main()
+{
+	cout << "int/signed(min) = " << INT_MIN << endl;
+	cout << "int/signed(max) = " << INT_MAX << endl;
+	cout << "char(min) = " << CHAR_MIN << endl;
+	cout << "char(max) = " << CHAR_MAX << endl;
+	cout << "long(min) = " << LONG_MIN << endl;
+	cout << "long(max) = " << LONG_MAX << endl;
+	cout << "unsigned(max) = " << UINT_MAX << endl;
+	cout << "float(min) = " << FLT_MIN << endl;
+	cout << "float(max) = " << FLT_MAX << endl;
+	cout << "double(min) = " << DBL_MIN << endl;
+	cout << "double = " << DBL_MIN << endl;
+}

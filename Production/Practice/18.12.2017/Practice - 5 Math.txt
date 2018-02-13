@@ -1,0 +1,21 @@
+/*Пользователь вводит три числа. Программа
+увеличивает первое число в два раза,
+второе число уменьшает на 3,
+третье число возводит в квадрат
+и затем находит сумму новых трех чисел*/
+
+#include "stdafx.h"
+#include <iostream> 
+using namespace std;
+
+int main(void)
+{
+	int a, b, c;
+	cout << "Enter the number 1 ->";
+	cin >> a;
+	cout << "Enter the number 2 ->";
+	cin >> b;
+	cout << "Enter the number 3 ->";
+	cin >> c;
+	cout << "New number=" << (a * 2) + (b - 3) + (c*c) << endl;
+}

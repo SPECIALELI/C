@@ -1,0 +1,21 @@
+/*Программа, которая выводит на экран куплет
+из песни Gorillaz – Clint Eastwood*/
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+void main()
+{
+cout << "I ain't happy, I'm feeling glad\n\
+I got sunshine in a bag\n\
+I'm useless but not for long\n\
+The future is coming on\n\
+I ain't happy, I'm feeling glad\n\
+I got sunshine in a bag\n\
+I'm useless but not for long\n\
+The future it's coming on\n\
+It's coming on\n\
+It's coming on\n\
+It's coming on" << endl; // Использование \n\ для перехода на следующую строку
+}

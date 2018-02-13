@@ -1,0 +1,11 @@
+/*Программа, которая выводит на экран : 
+Hello world! 
+         \\Dennis Ritchi\\*/
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+void main()
+{
+	cout << "Hello world!\n \t \\\\Dennis Ritchi\\\\" << endl;
+}

@@ -1,0 +1,15 @@
+/*Пользователь вводит сторону квадрата.
+Программа находит периметр и площадь квадрата*/
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main(void)
+{
+	int a;
+	cout << "Enter the lenght of square ->";
+	cin >> a;
+	cout << "Perimeter of a square = " << a * 4 << endl;
+	cout << "Square of a square = " << a * a << endl;
+}

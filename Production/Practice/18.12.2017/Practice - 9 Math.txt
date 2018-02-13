@@ -1,0 +1,25 @@
+/*Даны три переменные A, B и C. Программа изменяет значения этих переменных так,
+чтобы в A хранилось значение A+B , в B хранилась разность старых значений C−A ,
+а в C хранилось сумма старых значений A+B+C .*/
+
+#include "stdafx.h"
+#include <iostream>
+#include <climits> 
+using namespace std;
+
+int main(void)
+{
+	int a, b, c, temp_a, temp_b;
+	cout << "Enter the number 1  ->";
+	cin >> a;
+	cout << "Enter the number 2  ->";
+	cin >> b;
+	cout << "Enter the number 3  ->";
+	cin >> c;
+	temp_a = a;
+	temp_b = b;
+	a = a + b;
+	b = c - temp_a;
+	c = temp_a + temp_b + c;
+	cout << "New A = " << a << ", new B = " << b << ", new C = " << c << endl;
+}

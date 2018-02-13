@@ -1,0 +1,18 @@
+/*Программа, которая выводит на экран:
+Every hunter wish to know where pheasant sits*/
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+void main()
+{
+cout <<"Every\n\
+hunter\n\
+wish\n\
+to\n\
+know\n\
+where\n\
+the\n\
+pheasant\n\
+is"<< endl;
+}

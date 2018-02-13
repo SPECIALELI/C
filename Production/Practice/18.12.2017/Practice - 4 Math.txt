@@ -1,0 +1,15 @@
+/*Пользователь вводит число. Программа
+выводит на экран квадрат и куб этого числа.*/
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main(void)
+{
+	int a;
+	cout << "Enter the number -> ";
+	cin >> a;
+	cout << "Square of a number = " << a * a << endl;
+	cout << "Cube of a number = " << a * a * a << endl;
+}

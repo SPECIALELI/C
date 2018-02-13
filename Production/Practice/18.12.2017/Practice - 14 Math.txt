@@ -1,0 +1,17 @@
+/*Программа, которая по катетам прямоугольного
+треугольника, находит квадрат его гипотенузы*/
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main(void)
+{
+	int a, b, c;
+	cout << "Enter square catheter a -> ";
+	cin >> a;
+	cout << "Enter square catheter b -> ";
+	cin >> b;
+	c = (a*a) + (b*b);
+	cout << "Hypotenuses square = " << c << endl;
+}

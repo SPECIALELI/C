@@ -1,0 +1,19 @@
+/*Программа, которая вычисляет значение
+значение логического выражения для заданных переменных:
+bool a=false, b=true, c=false, d=true;
+
+а) a||b&&!a&&d
+б) a&&b||!c||d
+в) (b||c)&&a  */
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	bool a = false, b = true, c = false, d = true;
+	cout << (a || b && !a && d) << endl;
+	cout << (a && b || !c || d) << endl;
+	cout << ((b || c) && a) << endl;
+}

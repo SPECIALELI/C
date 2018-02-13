@@ -1,0 +1,15 @@
+/*Программа, которая выводит на экран:
+Объявление о продаже*/
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+void main()
+{
+cout <<"\t!Sell tortle!\n\
+Water red-nosed\n\
+Shell-14 cm\n\
+Do not bite ^_^\n\
+Kamenny Gorka Street\n\
+Velcom 80290000000" << endl;
+}

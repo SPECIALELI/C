@@ -1,0 +1,24 @@
+/*Программа, которая вычисляет значение
+арифметического выражения для заданных переменных:
+a=2.5, b=1.7, c=5, d=3, f=7;
+
+1) a*b+c/f
+2) b*f-d--
+3) ++c+d++*d  */
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+void main()
+{
+	double a = 2.5, b = 1.7;
+	float f = 7, ansver1, ansver2;
+	int c = 5, d = 3, ansver3;
+	ansver1 = a * b + c / f;
+	cout << "Ansver 1 = " << ansver1 << endl;
+	ansver2 = b * f - d--;
+	cout << "Ansver 2 = " << ansver2 << endl;
+	ansver3 = ++c + d++ * d;
+	cout << "Ansver 3 = " << ansver3 << endl;
+}

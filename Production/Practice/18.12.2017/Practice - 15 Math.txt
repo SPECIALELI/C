@@ -1,0 +1,18 @@
+/*Программа, которая запрашивает количество 
+жителей в стране и площадь страны, после чего 
+вычисляет и выводит плотность населения.*/
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main(void)
+{
+	float i, ca, pd;
+	cout << "Enter number of inhabitants -> ";
+	cin >> i;
+	cout << "Enter country area in km-> ";
+	cin >> ca;
+	pd = i / ca;
+	cout << "Population density = " << pd << " per km" << endl;
+}
