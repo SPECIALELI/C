@@ -1,0 +1,23 @@
+/*Дополнительная задача:
+Пользователь вводит три числа. Программа находит 
+сумму тех чисел, которые делятся на 5. 
+Если таких чисел нет, то выводит error.
+Использовать только тернарный оператор*/
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a, b, c, tr=1;
+	cout << "Enter A ->";
+	cin >> a;
+	cout << "Enter B ->";
+	cin >> b;
+	cout << "Enter C ->";
+	cin >> c;
+	((a + b + c) % 5 == 0) ? cout << a + b + c << endl :
+		((a + b) % 5 == 0) ? cout << a + b << endl :
+		((a + c) % 5 == 0) ? cout << a + c << endl :
+		((b + c) % 5 == 0) ? cout << b + c << endl : cout << "error" << endl;
+}

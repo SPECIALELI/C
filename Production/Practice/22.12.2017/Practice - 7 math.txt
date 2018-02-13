@@ -1,18 +1,18 @@
-/*Программа, которая преобразует введенное с клавиатуры 
-дробное число в формат расстояния в километрах и метрах. */
+/*Программа, которая вычисляет оптимальный вес для 
+пользователя, сравнивает его с реальным и выдает рекомендацию 
+о необходимости поправиться или похудеть*/
 
 #include "stdafx.h"
 #include <iostream>
-#include <climits>
 using namespace std;
 
-void main()
+int main()
 {
-	setlocale(0, "");
-	float d, km, m,x;
-	cout << "Enter distance: ";
-	cin >> d;
-	km = int(d); // Достаем целое число для км
-	m = static_cast<int>((d - km) * 1000); //Приведения типа float в int для метров
-	cout << km << "km " << m << " m " << endl;
+	int h, w, temp;
+	cout << "Enter the height - >";
+	cin >> h;
+	cout << "Enter the weight - >";
+	cin >> w;
+	temp = h - 100;
+	(temp > w) ? cout << "You need to get better at " << temp - w << " kg" << endl : cout << "You need to lose weight on " << w - temp << " kg" << endl;
 }

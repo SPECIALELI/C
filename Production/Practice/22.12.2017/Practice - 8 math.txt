@@ -1,18 +1,17 @@
-/*Программа, которая преобразует введенное с клавиатуры 
-дробное число в формат расстояния в километрах и метрах. */
+/*Программа, которая по заданному количеству секунд 
+определяет количество часов, минут и секунд.*/
 
 #include "stdafx.h"
 #include <iostream>
-#include <climits>
 using namespace std;
 
-void main()
+int main()
 {
-	setlocale(0, "");
-	float d, km, m,x;
-	cout << "Enter distance: ";
-	cin >> d;
-	km = int(d); // Достаем целое число для км
-	m = static_cast<int>((d - km) * 1000); //Приведения типа float в int для метров
-	cout << km << "km " << m << " m " << endl;
+	int temp, h, m, s;
+	cout << "Enter the number of seconds - >";
+	cin >> temp;
+	h = temp / 3600;
+	m = (temp - h * 3600) / 60;
+	s = temp - h * 3600 - m * 60;
+	cout << temp << " seconds is: " << h << " hour " << m << " min " << s << " sec" << endl;
 }

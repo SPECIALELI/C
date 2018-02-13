@@ -1,0 +1,15 @@
+/*Программа вычисляет расстояния между 
+населенными пунктами, изображенными на карте.*/
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	float ms, dist;
+	cout << "Enter map scale (km in 1cen)->";
+	cin >> ms;
+	cout << "Enter the distance between the points (cen) -> ";
+	cin >> dist;
+	cout << "Distance between settlements is: " << dist * ms << "km" << endl;
+}

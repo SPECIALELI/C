@@ -1,18 +1,14 @@
-/*Программа, которая преобразует введенное с клавиатуры 
-дробное число в формат расстояния в километрах и метрах. */
+/*Программа, которая проверяет, заканчивается
+ли введенное пользователем целое число на 0*/
 
 #include "stdafx.h"
 #include <iostream>
-#include <climits>
 using namespace std;
 
-void main()
+int main()
 {
-	setlocale(0, "");
-	float d, km, m,x;
-	cout << "Enter distance: ";
-	cin >> d;
-	km = int(d); // Достаем целое число для км
-	m = static_cast<int>((d - km) * 1000); //Приведения типа float в int для метров
-	cout << km << "km " << m << " m " << endl;
+	int a;
+	cout << "Enter an integer - >";
+	cin >> a;
+	(a % 10 == 0) ? cout << "Yes" << endl : cout << "No" << endl;
 }

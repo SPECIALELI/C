@@ -1,0 +1,19 @@
+/*Программа переводит метры,
+в известные единицы измерения длины*/
+
+#include "stdafx.h"
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+	float m;
+	cout << "Enter value in meters ->";
+	cin >> m;
+	cout << m << " meters in kilometers is:" << m * 0.001 << endl;
+	cout << m << " meters in centimeters is:" << m * 100 << endl;
+	cout << m << " meters in decimeters is:" << m * 10 << endl;
+	cout << m << " meters in milimeters is:" << m * 1000 << endl;
+	cout << m << " meters in inches is:" << m / 0.0254 << endl;
+	cout << m << " meters in miles is:" << m / 1870 << endl;
+}
